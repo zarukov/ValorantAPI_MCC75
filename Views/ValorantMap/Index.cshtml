@@ -1,0 +1,72 @@
+﻿<center><h1 style="color:gold";>Latest Map List</h1></center>
+
+@*<ul id="listPoke">
+    <li></li>
+</ul>*@
+
+
+<table class="table table-hover table-stripped">
+    <thead class="table-primary">
+        <tr>
+            <th>No</th>
+            <th>Map Name</th>
+            <th>Map Information</th>
+            @*<th>Map Display</th>*@
+        </tr>
+    </thead>
+    <tbody id="tbodyMap">
+    </tbody>
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Map Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="img-container">
+          <img id="update_img" src="https://media.valorant-api.com/maps/7eaecc1b-4337-bbf6-6ab9-04b8f06b3319/displayicon.png" style="width:450px;height:450px" alt="" srcset="">
+      </div>
+      <div class="detail-container">
+            <div class="title-container">
+                <h3 class="name text-center" id="update_name">Ascent</h3>
+                <hr class="seperator">
+            </div>
+            <div class="player-data">
+                 <div class="col data-container">
+                    <small class="muted-text">UUID</small>
+                        <p class="muted-text" id="update_uuid">7eaecc1b-4337-bbf6-6ab9-04b8f06b3319</p>
+                 </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@*<div class="modal fade" id="modalDisplay" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel2">Map Display</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="display">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+@section Scripts{
+     <script src="~/js/ajax.js" asp-append-version="true"></script>
+}

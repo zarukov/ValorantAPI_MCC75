@@ -1,0 +1,66 @@
+﻿<center><h1 style="color:gold" ;>Latest Agent List</h1></center>
+
+<table class="table table-hover table-stripped">
+    <thead class="table-primary">
+        <tr>
+            <th>No</th>
+            <th>Agent Name</th>
+            <th>Agent Information</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyAgent">
+    </tbody>
+</table>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalInfo2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel2">Agent Information</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="img-container">
+          <img id="update_image" src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/displayicon.png" style="width:400px;height:400px" alt="" srcset="">
+      </div>
+      <div class="detail-container">
+            <div class="title-container">
+                <h3 class="name text-center" id="update_agentName">Gekko</h3>
+                <hr class="separator">
+            </div>
+            <div class="player-data">
+                 <div class="col data-container">
+                    <small class="muted-text" style="color:red"><b>Description</b></small>
+                        <p class="muted-text" id="update_desc">Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.</p>
+                 </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+@*<div class="modal fade" id="modalDisplay" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel2">Map Display</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="display">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+@section Scripts{
+         <script src="~/js/ajax.js" asp-append-version="true"></script>
+}
